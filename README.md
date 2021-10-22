@@ -2,6 +2,11 @@
 
 Generate metadata for a SWAMID SP.
 
+## Requirements
+
+- Docker
+- envsubst (GNU gettext)
+
 ## Usage
 
 1. Edit `input.sh` and supply definitions for all the listed variables.
