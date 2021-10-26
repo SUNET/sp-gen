@@ -17,3 +17,5 @@ You should now have three new files:
 - `sp-cert.pem`
 - `sp-key.pem`
 - `metadata.xml`
+
+Key generation can be skipped by adding an existing `sp-cert.pem` to this directory.
