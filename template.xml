@@ -33,7 +33,9 @@
         <mdui:DisplayName xml:lang="en">$DISPLAY_NAME_EN</mdui:DisplayName>
         <mdui:Description xml:lang="sv">$DESCRIPTION_SE</mdui:Description>
         <mdui:Description xml:lang="en">$DESCRIPTION_EN</mdui:Description>
-        <mdui:PrivacyStatementURL xml:lang="en">$PRIVACY_STATEMENT_URL</mdui:PrivacyStatementURL>
+        <mdui:InformationURL>$INFORMATION_URL</mdui:InformationURL>
+        <mdui:PrivacyStatementURL xml:lang="sv">$PRIVACY_STATEMENT_URL_SE</mdui:PrivacyStatementURL>
+        <mdui:PrivacyStatementURL xml:lang="en">$PRIVACY_STATEMENT_URL_EN</mdui:PrivacyStatementURL>
       </mdui:UIInfo>
     </md:Extensions>
     <md:KeyDescriptor>
@@ -70,11 +72,22 @@
   </md:SPSSODescriptor>
 
   <md:Organization>
+    <md:OrganizationName xml:lang="sv">Sunet</md:OrganizationName>
     <md:OrganizationName xml:lang="en">Sunet</md:OrganizationName>
     <md:OrganizationDisplayName xml:lang="en">Sunet</md:OrganizationDisplayName>
-    <md:OrganizationURL xml:lang="en">https://www.sunet.se</md:OrganizationURL>
+    <md:OrganizationDisplayName xml:lang="sv">Sunet</md:OrganizationDisplayName>
+    <md:OrganizationURL xml:lang="sv">https://www.sunet.se</md:OrganizationURL>
+    <md:OrganizationURL xml:lang="en">https://www.sunet.se/en</md:OrganizationURL>
   </md:Organization>
   <md:ContactPerson contactType="technical">
+    <md:SurName>Sunet NOC</md:SurName>
+    <md:EmailAddress>mailto:noc@sunet.se</md:EmailAddress>
+  </md:ContactPerson>
+  <md:ContactPerson contactType="support">
+    <md:SurName>Sunet NOC</md:SurName>
+    <md:EmailAddress>mailto:noc@sunet.se</md:EmailAddress>
+  </md:ContactPerson>
+  <md:ContactPerson contactType="security">
     <md:SurName>Sunet NOC</md:SurName>
     <md:EmailAddress>mailto:noc@sunet.se</md:EmailAddress>
   </md:ContactPerson>
