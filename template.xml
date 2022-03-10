@@ -33,7 +33,8 @@
         <mdui:DisplayName xml:lang="en">$DISPLAY_NAME_EN</mdui:DisplayName>
         <mdui:Description xml:lang="sv">$DESCRIPTION_SE</mdui:Description>
         <mdui:Description xml:lang="en">$DESCRIPTION_EN</mdui:Description>
-        <mdui:InformationURL>$INFORMATION_URL</mdui:InformationURL>
+        <mdui:InformationURL xml:lang="sv">$INFORMATION_URL_SE</mdui:InformationURL>
+        <mdui:InformationURL xml:lang="en">$INFORMATION_URL_EN</mdui:InformationURL>
         <mdui:PrivacyStatementURL xml:lang="sv">$PRIVACY_STATEMENT_URL_SE</mdui:PrivacyStatementURL>
         <mdui:PrivacyStatementURL xml:lang="en">$PRIVACY_STATEMENT_URL_EN</mdui:PrivacyStatementURL>
       </mdui:UIInfo>
@@ -80,19 +81,19 @@
     <md:OrganizationURL xml:lang="en">https://www.sunet.se/en</md:OrganizationURL>
   </md:Organization>
   <md:ContactPerson contactType="technical">
-    <md:SurName>Sunet NOC</md:SurName>
+    <md:GivenName>Sunet NOC</md:GivenName>
     <md:EmailAddress>mailto:noc@sunet.se</md:EmailAddress>
   </md:ContactPerson>
   <md:ContactPerson contactType="support">
-    <md:SurName>Sunet NOC</md:SurName>
+    <md:GivenName>Sunet NOC</md:GivenName>
     <md:EmailAddress>mailto:noc@sunet.se</md:EmailAddress>
   </md:ContactPerson>
-  <md:ContactPerson contactType="security">
-    <md:SurName>Sunet NOC</md:SurName>
+  <md:ContactPerson contactType="other" xmlns:remd="http://refeds.org/metadata" remd:contactType="http://refeds.org/metadata/contactType/security">
+    <md:GivenName>Sunet NOC</md:GivenName>
     <md:EmailAddress>mailto:noc@sunet.se</md:EmailAddress>
   </md:ContactPerson>
   <md:ContactPerson contactType="administrative">
-    <md:SurName>$ADMIN_NAME</md:SurName>
+    <md:GivenName>$ADMIN_NAME</md:GivenName>
     <md:EmailAddress>mailto:$ADMIN_EMAIL</md:EmailAddress>
   </md:ContactPerson>
 

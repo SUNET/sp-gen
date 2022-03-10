@@ -1,16 +1,18 @@
 #!/usr/bin/env bash
 
 source input.sh
-export URL
-export DISPLAY_NAME_SE
-export DISPLAY_NAME_EN
-export DESCRIPTION_SE
-export DESCRIPTION_EN
-export INFORMATION_URL
-export PRIVACY_STATEMENT_URL_SE
-export PRIVACY_STATEMENT_URL_EN
-export ADMIN_NAME
+
 export ADMIN_EMAIL
+export ADMIN_NAME
+export DESCRIPTION_EN
+export DESCRIPTION_SE
+export DISPLAY_NAME_EN
+export DISPLAY_NAME_SE
+export INFORMATION_URL_EN
+export INFORMATION_URL_SE
+export PRIVACY_STATEMENT_URL_EN
+export PRIVACY_STATEMENT_URL_SE
+export URL
 
 ID=$URL
 export ID
