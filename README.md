@@ -9,8 +9,10 @@ Generate metadata for a SWAMID SP.
 
 ## Usage
 
-1. Edit `input.sh` and supply definitions for all the listed variables.
-2. `./sp-gen metadata.xml`
+1. `./install`
+2. `sp-gen --template`
+3. Edit `input.sh` and supply definitions for all the listed variables.
+4. `sp-gen`
 
 You should now have three new files:
 

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+ln -s $PWD /usr/local/opt/sp-gen
+ln -s $PWD/sp-gen /usr/local/bin/sp-gen

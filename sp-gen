@@ -1,8 +1,15 @@
 #!/usr/bin/env bash
 
-if [[ $# -ne 1 ]]; then
-    echo "Usage: ./sp-gen <output file>"
-    exit 1
+PREFIX=/usr/local/opt/sp-gen
+
+if [[ $1 == "-h" ]]; then
+    echo "Usage: ./sp-gen [ --template ]"
+    exit 0
+fi
+
+if [[ $1 == "--template" ]]; then
+    cp $PREFIX/input.sh input.sh
+    exit 0
 fi
 
 source input.sh
@@ -34,4 +41,4 @@ fi
 CERT=$(sed '1d;$d'< sp-cert.pem)
 export CERT
 
-envsubst < template.xml > $1
+envsubst < $PREFIX/template.xml > metadata.xml
