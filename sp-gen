@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [[ $# -ne 1 ]]; then
+    echo "Usage: ./sp-gen <output file>"
+    exit 1
+fi
+
 source input.sh
 
 export ADMIN_EMAIL
@@ -18,7 +23,7 @@ ID=$URL
 export ID
 
 if [[ ! -f "sp-key.pem" && ! -f "sp-cert.pem" ]]; then
-    docker build -q -t sp-gen .
+    docker build -t sp-gen .
     docker run --rm -d -it --name sp-gen sp-gen
     docker exec sp-gen shib-keygen -h $ID
     docker cp sp-gen:/etc/shibboleth/sp-key.pem .
@@ -29,4 +34,4 @@ fi
 CERT=$(sed '1d;$d'< sp-cert.pem)
 export CERT
 
-envsubst < template.xml
+envsubst < template.xml > $1
