@@ -66,7 +66,7 @@ cat >$SSLCNF <<EOF
 # OpenSSL configuration file for creating keypair
 [req]
 prompt=no
-default_bits=3072
+default_bits=4096
 encrypt_key=no
 default_md=sha256
 distinguished_name=dn
