@@ -7,6 +7,8 @@ Generate metadata for a SWAMID SP.
 - openssl
 - envsubst (GNU gettext)
 
+On macOS, `brew install gettext` is sufficient.
+
 ## Usage
 
 1. `./install`
