@@ -4,7 +4,7 @@ Generate metadata for a SWAMID SP.
 
 ## Requirements
 
-- Docker
+- openssl
 - envsubst (GNU gettext)
 
 ## Usage
