@@ -3,14 +3,10 @@
 # Defaults added for Debian.  They can still be overridden by command-line
 # options.
 OUT=.
-USER=_shibd
-GROUP=_shibd
 
 while getopts n:h:u:g:o:e:y:bf c
      do
          case $c in
-           u)         USER=$OPTARG;;
-           g)         GROUP=$OPTARG;;
            o)         OUT=$OPTARG;;
            b)         BATCH=1;;
            f)         FORCE=1;;
@@ -18,7 +14,7 @@ while getopts n:h:u:g:o:e:y:bf c
            e)         ENTITYID=$OPTARG;;
            y)         YEARS=$OPTARG;;
 		   n)         PREFIX=$OPTARG;;
-		   \?)        echo "keygen [-o output directory (default .)] [-u username to own keypair] [-g owning groupname] [-h hostname for cert] [-y years to issue cert] [-e entityID to embed in cert] [-n filename prefix (default 'sp')]"
+		   \?)        echo "keygen [-o output directory (default .)] [-h hostname for cert] [-y years to issue cert] [-e entityID to embed in cert] [-n filename prefix (default 'sp')]"
                       exit 1;;
          esac
      done
@@ -88,11 +84,3 @@ else
     openssl req -config $SSLCNF -new -x509 -days $DAYS -keyout $OUT/${PREFIX}-key.pem -out $OUT/${PREFIX}-cert.pem 2> /dev/null
 fi
 rm $SSLCNF
-
-if  [ -s $OUT/${PREFIX}-key.pem -a -n "$USER" ] ; then
-    chown $USER $OUT/${PREFIX}-key.pem $OUT/${PREFIX}-cert.pem
-fi
-
-if  [ -s $OUT/${PREFIX}-key.pem -a -n "$GROUP" ] ; then
-    chgrp $GROUP $OUT/${PREFIX}-key.pem $OUT/${PREFIX}-cert.pem
-fi
