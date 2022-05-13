@@ -18,7 +18,7 @@ while getopts n:h:u:g:o:e:y:bf c
                       exit 1;;
          esac
      done
-     
+
 if [ -z "$OUT" ] ; then
     OUT=.
 fi
@@ -32,7 +32,7 @@ if [ -n "$FORCE" ] ; then
 fi
 
 if  [ -s $OUT/${PREFIX}-key.pem -o -s $OUT/${PREFIX}-cert.pem ] ; then
-    if [ -z "$BATCH" ] ; then  
+    if [ -z "$BATCH" ] ; then
         echo The files $OUT/${PREFIX}-key.pem and/or $OUT/${PREFIX}-cert.pem already exist!
         echo Use -f option to force recreation of keypair.
         exit 2
