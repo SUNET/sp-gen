@@ -30,7 +30,7 @@ ID=$URL
 export ID
 
 if [[ ! -f "sp-key.pem" && ! -f "sp-cert.pem" ]]; then
-    ./keygen -h $ID
+    $PREFIX/keygen -h $ID
 fi
 
 CERT=$(sed '1d;$d'< sp-cert.pem)
