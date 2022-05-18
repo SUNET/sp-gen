@@ -2,7 +2,7 @@
 
 PREFIX=/usr/local/opt/sp-gen
 
-if [[ $1 == "-h" ]]; then
+if [[ $1 == "-h" || $1 == "--help" ]]; then
     echo "Usage: ./sp-gen [ --template ]"
     exit 0
 fi
