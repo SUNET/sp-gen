@@ -20,6 +20,7 @@
     <mdattr:EntityAttributes>
       <samla:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
         <samla:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</samla:AttributeValue>
+        <samla:AttributeValue>https://refeds.org/category/code-of-conduct/v2</samla:AttributeValue>
       </samla:Attribute>
     </mdattr:EntityAttributes>
   </md:Extensions>
@@ -73,10 +74,10 @@
   </md:SPSSODescriptor>
 
   <md:Organization>
-    <md:OrganizationName xml:lang="sv">Sunet</md:OrganizationName>
-    <md:OrganizationName xml:lang="en">Sunet</md:OrganizationName>
-    <md:OrganizationDisplayName xml:lang="en">Sunet</md:OrganizationDisplayName>
-    <md:OrganizationDisplayName xml:lang="sv">Sunet</md:OrganizationDisplayName>
+    <md:OrganizationName xml:lang="sv">Vetenskapsrådet</md:OrganizationName>
+    <md:OrganizationName xml:lang="en">The Swedish Research Council</md:OrganizationName>
+    <md:OrganizationDisplayName xml:lang="en">The Swedish Research Council</md:OrganizationDisplayName>
+    <md:OrganizationDisplayName xml:lang="sv">Vetenskapsrådet</md:OrganizationDisplayName>
     <md:OrganizationURL xml:lang="sv">https://www.sunet.se</md:OrganizationURL>
     <md:OrganizationURL xml:lang="en">https://www.sunet.se/en</md:OrganizationURL>
   </md:Organization>
